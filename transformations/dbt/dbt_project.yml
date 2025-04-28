@@ -1,0 +1,11 @@
+name: default
+version: 1.0.0
+config-version: 2
+
+profile: default
+
+target-path: target
+
+models:
+  default:
+    +materialized: table

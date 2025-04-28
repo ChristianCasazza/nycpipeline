@@ -1,0 +1,46 @@
+# Common Python and Development Exclusions
+# ---------------------------------------
+# Secrets and environment files
+secrets.toml
+.env
+
+# Python compilation artifacts
+**/__pycache__/
+**/*.py[cod]
+
+# Virtual environments
+.venv/
+
+# IDE-specific files
+.vscode/
+
+# Temporary files
+**/*tmp*/
+
+
+# Project-Specific Exclusions (MTA Data Pipeline)
+# ---------------------------------------------
+# DuckDB files
+*.wal
+data.duckdb
+
+# Data and database files
+data/
+metadata.db
+
+# Dagster-related files
+dagster.yaml
+dagster_logs/
+mta/logs/
+logs/
+transformations/dbt/target
+
+
+# Other
+tools/
+codeprinter/
+datatest/
+testing/
+
+# Rare Python artifact (unlikely in CPython)
+**/*$py.class

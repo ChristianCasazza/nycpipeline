@@ -1,0 +1,14 @@
+version: 2
+sources:
+- name: main
+  tables:
+  - name: example_single_file_asset
+    meta:
+      dagster:
+        asset_key:
+        - example_single_file_asset
+  - name: example_partitioned_file_asset
+    meta:
+      dagster:
+        asset_key:
+        - example_partitioned_file_asset
