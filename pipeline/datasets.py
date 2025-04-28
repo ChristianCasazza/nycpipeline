@@ -1,11 +1,12 @@
 # Single File Asset Names
 SINGLE_FILE_ASSETS_NAMES = [
-    "nyc_dob_certificate_occupancy",
-    "nyc_dob_safety_violations",
-    "nyc_hpd_aep"
+    "example_single_file_asset",
+    ""
+    ""
 ]
 
 # Partitioned Asset Names
 PARTITIONED_ASSETS_NAMES = [
-    "mta_subway_hourly_ridership"
+    "example_partitioned_file_asset",
+    ""
 ]
