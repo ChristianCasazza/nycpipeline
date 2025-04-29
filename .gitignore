@@ -7,6 +7,7 @@ secrets.toml
 # Python compilation artifacts
 **/__pycache__/
 **/*.py[cod]
+.pytest_cache/
 
 # Virtual environments
 .venv/
@@ -37,10 +38,11 @@ transformations/dbt/target
 
 
 # Other
-tools/
 codeprinter/
 datatest/
 testing/
 
 # Rare Python artifact (unlikely in CPython)
 **/*$py.class
+README.md 
+tests/

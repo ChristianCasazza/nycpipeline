@@ -2699,12 +2699,16 @@ dependencies = [
     { name = "ipywidgets" },
     { name = "polars" },
     { name = "pyarrow" },
-    { name = "pytest" },
     { name = "python-dotenv" },
     { name = "python-slugify" },
     { name = "requests" },
     { name = "ruff" },
     { name = "tenacity" },
+]
+
+[package.optional-dependencies]
+tests = [
+    { name = "pytest" },
 ]
 
 [package.metadata]
@@ -2724,7 +2728,7 @@ requires-dist = [
     { name = "ipywidgets", specifier = ">=8.1.5" },
     { name = "polars", specifier = ">=1.8.0" },
     { name = "pyarrow", specifier = ">=17.0.0" },
-    { name = "pytest", specifier = ">=8.3.5" },
+    { name = "pytest", marker = "extra == 'tests'", specifier = ">=8.3.5" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "python-slugify", specifier = ">=8.0.4" },
     { name = "requests", specifier = ">=2.32.3" },
