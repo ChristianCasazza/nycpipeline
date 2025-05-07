@@ -36,7 +36,7 @@ mta/logs/
 logs/
 transformations/dbt/target
 
-
+venv/
 # Other
 codeprinter/
 datatest/
